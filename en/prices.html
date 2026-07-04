@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prices | Uzungöl Scooter Rental</title>
+  <meta name="description" content="Uzungöl scooter rental prices. Affordable hourly, daily, weekly rates.">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/scooter-placeholder.svg">
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner"><a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-text"><span data-logo-text>Uzungöl Scooter</span><span data-logo-subtext>Scooter
+            Rental</span></div>
+      </a>
+      <div class="navbar__nav"><a href="index.html" class="navbar__link">Home</a><a href="fleet.html"
+          class="navbar__link">Fleet</a><a href="prices.html" class="navbar__link active">Prices</a><a href="about.html"
+          class="navbar__link">About</a><a href="contact.html" class="navbar__link">Contact</a></div>
+      <div class="navbar__actions">
+        <div class="lang-selector"><button class="lang-selector__btn">🇬🇧 EN <svg viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg></button>
+          <div class="lang-selector__dropdown"><button class="lang-selector__item"
+              onclick="window.location.href='../fiyatlar.html'">🇹🇷 Türkçe</button><button
+              class="lang-selector__item active">🇬🇧 English</button><button class="lang-selector__item"
+              onclick="window.location.href='../ar/prices.html'">🇸🇦 العربية</button></div>
+        </div><a href="#" class="btn btn--whatsapp btn--sm hide-mobile" data-whatsapp-link>WhatsApp</a><button
+          class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobile-menu"><a href="index.html" class="navbar__link">Home</a><a href="fleet.html"
+      class="navbar__link">Fleet</a><a href="prices.html" class="navbar__link active">Prices</a><a href="about.html"
+      class="navbar__link">About</a><a href="contact.html" class="navbar__link">Contact</a></div>
+  <section class="hero hero--sm">
+    <div class="hero__bg"><img src="../assets/images/hero-bg.png" alt="Uzungöl" loading="eager"></div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content" style="padding-top:var(--space-24)">
+        <div class="page-breadcrumb"><a href="index.html">Home</a> <span>›</span> <span class="current">Prices</span>
+        </div>
+        <h1 class="hero__title" style="font-size:var(--fs-4xl)">Rental <span>Prices</span></h1>
+        <p class="hero__subtitle">Flexible pricing options to fit your budget.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Our Pricing</h2>
+        <p class="section-subtitle">Prices may vary based on scooter model.</p>
+      </div>
+      <div class="admin-panel animate-on-scroll" style="max-width:960px;margin:0 auto var(--space-10)">
+        <div class="admin-table-wrapper">
+          <table class="admin-table" style="width:100%">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th style="text-align:center">30 Mins (Half-Hour)</th>
+                <th style="text-align:center">Hourly</th>
+                <th style="text-align:center">Daily</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody data-price-table></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="prices__extras animate-on-scroll" style="max-width:960px;margin:0 auto">
+        <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-bottom:var(--space-6)">Additional Info</h3>
+        <table class="prices__extras-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Fee</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody data-extras-table></tbody>
+        </table>
+      </div>
+      <div class="prices__rules animate-on-scroll" style="max-width:960px;margin:var(--space-12) auto 0">
+        <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-bottom:var(--space-6)">Rental Rules</h3>
+        <div class="prices__rules-list" data-rules-list></div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 class="cta-section__title">Need More Info?</h2>
+        <p class="cta-section__text">Contact us for detailed pricing and special offers.</p>
+        <div class="cta-section__actions"><a href="#" class="btn btn--whatsapp btn--lg" data-whatsapp-link>Ask via
+            WhatsApp</a><a href="#" class="btn btn--outline-white btn--lg" data-phone-link>Call Now</a></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom"><span>&copy; 2024 Uzungöl Scooter Rental</span></div>
+    </div>
+  </footer>
+  <div class="whatsapp-float"><a href="#" class="whatsapp-float__btn" data-whatsapp-link target="_blank"><svg
+        viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.474A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z" />
+      </svg></a></div>
+  <button class="scroll-top" id="scroll-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2">
+      <path d="M18 15l-6-6-6 6" />
+    </svg></button>
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.DataManager) return;
+      const scooters = DataManager.getScooters(true), pricing = DataManager.getPricing(), c = pricing.currency || '₺';
+      const tb = document.querySelector('[data-price-table]');
+      if (tb) tb.innerHTML = scooters.map(s => `<tr><td><strong>${s.brand} ${s.model.en}</strong><br><span style="color:var(--color-gray-400);font-size:var(--fs-xs)">${s.powerWatt || s.engineCC || 0}W</span></td><td style="text-align:center;font-weight:var(--fw-bold);color:var(--color-bordo)">${c}${s.prices.halfHourly || 0}</td><td style="text-align:center;font-weight:var(--fw-bold);color:var(--color-bordo)">${c}${s.prices.hourly}</td><td style="text-align:center;font-weight:var(--fw-bold);color:var(--color-bordo)">${c}${s.prices.daily}</td><td><a href="https://wa.me/${DataManager.getContact().whatsapp.replace(/[^0-9]/g, '')}" class="btn btn--whatsapp btn--sm" target="_blank">Rent</a></td></tr>`).join('');
+      const eb = document.querySelector('[data-extras-table]');
+      if (eb) { let r = pricing.extras.map(e => `<tr><td>${e.name.en}</td><td>${e.price > 0 ? c + e.price : '<span style="color:var(--color-success)">Free</span>'}</td><td>${e.note.en}</td></tr>`).join(''); r += `<tr><td><strong>Deposit</strong></td><td><strong>${c}${pricing.deposit.amount}</strong></td><td>${pricing.deposit.description.en}</td></tr>`; eb.innerHTML = r; }
+      const rl = document.querySelector('[data-rules-list]');
+      if (rl && pricing.rules) rl.innerHTML = pricing.rules.en.map(r => `<div class="prices__rule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>${r}</span></div>`).join('');
+    });
+  </script>
+</body>
+
+</html>

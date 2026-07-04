@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiyatlar | Uzungöl Scooter Kiralama</title>
+  <meta name="description" content="Uzungöl scooter kiralama fiyatları. Saatlik, günlük, haftalık uygun tarifeler. Depozito ve kiralama şartları.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/scooter-placeholder.svg">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/images/scooter-placeholder.svg" alt="Logo" data-logo-image style="display:none;">
+        <div class="navbar__logo-text"><span data-logo-text>Uzungöl Scooter</span><span data-logo-subtext>Scooter Kiralama</span></div>
+      </a>
+      <div class="navbar__nav">
+        <a href="index.html" class="navbar__link">Ana Sayfa</a>
+        <a href="filo.html" class="navbar__link">Filomuz</a>
+        <a href="fiyatlar.html" class="navbar__link active">Fiyatlar</a>
+        <a href="hakkimizda.html" class="navbar__link">Hakkımızda</a>
+        <a href="iletisim.html" class="navbar__link">İletişim</a>
+      </div>
+      <div class="navbar__actions">
+        <div class="lang-selector">
+          <button class="lang-selector__btn">🇹🇷 TR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="lang-selector__dropdown">
+            <button class="lang-selector__item active" onclick="window.location.href='fiyatlar.html'">🇹🇷 Türkçe</button>
+            <button class="lang-selector__item" onclick="window.location.href='en/prices.html'">🇬🇧 English</button>
+            <button class="lang-selector__item" onclick="window.location.href='ar/prices.html'">🇸🇦 العربية</button>
+          </div>
+        </div>
+        <a href="#" class="btn btn--whatsapp btn--sm hide-mobile" data-whatsapp-link>WhatsApp</a>
+        <button class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobile-menu">
+    <a href="index.html" class="navbar__link">Ana Sayfa</a>
+    <a href="filo.html" class="navbar__link">Filomuz</a>
+    <a href="fiyatlar.html" class="navbar__link active">Fiyatlar</a>
+    <a href="hakkimizda.html" class="navbar__link">Hakkımızda</a>
+    <a href="iletisim.html" class="navbar__link">İletişim</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero hero--sm prices-hero">
+    <div class="hero__bg"><img src="assets/images/hero-bg.png" alt="Uzungöl" loading="eager"></div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content" style="padding-top:var(--space-24)">
+        <div class="page-breadcrumb">
+          <a href="index.html">Ana Sayfa</a> <span>›</span> <span class="current">Fiyatlar</span>
+        </div>
+        <h1 class="hero__title" style="font-size:var(--fs-4xl)">Kiralama <span>Fiyatları</span></h1>
+        <p class="hero__subtitle">Bütçenize uygun esnek fiyatlandırma seçenekleri.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING TABLE -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Fiyat Tarifelerimiz</h2>
+        <p class="section-subtitle">Tüm fiyatlarımız scooter modeline göre değişiklik gösterebilir.</p>
+      </div>
+
+      <!-- Dynamic pricing table -->
+      <div class="admin-panel animate-on-scroll" style="max-width:960px;margin:0 auto var(--space-10)">
+        <div class="admin-table-wrapper">
+          <table class="admin-table" id="price-table" style="width:100%">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th style="text-align:center">30 Dk (Yarım Saat)</th>
+                <th style="text-align:center">Saatlik</th>
+                <th style="text-align:center">Günlük</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody data-price-table>
+              <!-- Rendered by JS below -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- EXTRAS -->
+      <div class="prices__extras animate-on-scroll" style="max-width:960px;margin:0 auto">
+        <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-bottom:var(--space-6)">Ek Bilgiler</h3>
+        <table class="prices__extras-table" id="extras-table">
+          <thead>
+            <tr>
+              <th>Hizmet</th>
+              <th>Ücret</th>
+              <th>Not</th>
+            </tr>
+          </thead>
+          <tbody data-extras-table>
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- RULES -->
+      <div class="prices__rules animate-on-scroll" style="max-width:960px;margin:var(--space-12) auto 0">
+        <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-bottom:var(--space-6);display:flex;align-items:center;gap:var(--space-2)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" style="color:var(--color-navy)"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Kiralama Kuralları
+        </h3>
+        <div class="prices__rules-list" data-rules-list>
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-section__content">
+        <h2 class="cta-section__title">Fiyat Bilgisi Almak İster misiniz?</h2>
+        <p class="cta-section__text">Detaylı bilgi ve özel fiyatlar için hemen iletişime geçin.</p>
+        <div class="cta-section__actions">
+          <a href="#" class="btn btn--whatsapp btn--lg" data-whatsapp-link>WhatsApp ile Sor</a>
+          <a href="#" class="btn btn--outline-white btn--lg" data-phone-link>Hemen Ara</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo"><span class="footer__logo-text" data-logo-text>Uzungöl Scooter</span></div>
+          <p class="footer__desc">Uzungöl'ün eşsiz doğası içinde scooter kiralama hizmeti.</p>
+        </div>
+        <div><h4 class="footer__heading">Hızlı Linkler</h4><div class="footer__links"><a href="index.html" class="footer__link">Ana Sayfa</a><a href="filo.html" class="footer__link">Filomuz</a><a href="fiyatlar.html" class="footer__link">Fiyatlar</a><a href="iletisim.html" class="footer__link">İletişim</a></div></div>
+        <div><h4 class="footer__heading">İletişim</h4><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-address></span></div></div>
+      </div>
+      <div class="footer__bottom"><span>&copy; 2024 Uzungöl Scooter Kiralama</span></div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float"><span class="whatsapp-float__tooltip">Bilgi almak için yazın! 💬</span><a href="#" class="whatsapp-float__btn" data-whatsapp-link target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.474A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div>
+  <button class="scroll-top" id="scroll-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.DataManager) return;
+
+      // Render price table
+      const scooters = DataManager.getScooters(true);
+      const pricing = DataManager.getPricing();
+      const currency = pricing.currency || '₺';
+
+      const priceTableBody = document.querySelector('[data-price-table]');
+      if (priceTableBody) {
+        priceTableBody.innerHTML = scooters.map(s => `
+          <tr>
+            <td><strong>${s.brand} ${s.model.tr}</strong><br><span style="color:var(--color-gray-400);font-size:var(--fs-xs)">${s.powerWatt || s.engineCC || 0}W • ${s.capacity} kişi</span></td>
+            <td style="text-align:center;font-weight:var(--fw-bold);color:var(--color-bordo)">${currency}${s.prices.halfHourly || 0}</td>
+            <td style="text-align:center;font-weight:var(--fw-bold);color:var(--color-bordo)">${currency}${s.prices.hourly}</td>
+            <td style="text-align:center;font-weight:var(--fw-bold);color:var(--color-bordo)">${currency}${s.prices.daily}</td>
+            <td><a href="https://wa.me/${DataManager.getContact().whatsapp.replace(/[^0-9]/g,'')}" class="btn btn--whatsapp btn--sm" target="_blank">Kirala</a></td>
+          </tr>
+        `).join('');
+      }
+
+      // Render extras
+      const extrasBody = document.querySelector('[data-extras-table]');
+      if (extrasBody) {
+        let rows = pricing.extras.map(e => `
+          <tr>
+            <td>${e.name.tr}</td>
+            <td>${e.price > 0 ? currency + e.price : '<span style="color:var(--color-success);font-weight:var(--fw-semibold)">Ücretsiz</span>'}</td>
+            <td>${e.note.tr}</td>
+          </tr>
+        `).join('');
+        rows += `<tr><td><strong>Depozito</strong></td><td><strong>${currency}${pricing.deposit.amount}</strong></td><td>${pricing.deposit.description.tr}</td></tr>`;
+        extrasBody.innerHTML = rows;
+      }
+
+      // Render rules
+      const rulesList = document.querySelector('[data-rules-list]');
+      if (rulesList && pricing.rules) {
+        rulesList.innerHTML = pricing.rules.tr.map(rule => `
+          <div class="prices__rule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>${rule}</span>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | Uzungöl Scooter Kiralama</title>
+  <meta name="description" content="Uzungöl Scooter Kiralama iletişim bilgileri. Adres, telefon, WhatsApp, çalışma saatleri ve harita.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/scooter-placeholder.svg">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/images/scooter-placeholder.svg" alt="Logo" data-logo-image style="display:none;">
+        <div class="navbar__logo-text"><span data-logo-text>Uzungöl Scooter</span><span data-logo-subtext>Scooter Kiralama</span></div>
+      </a>
+      <div class="navbar__nav">
+        <a href="index.html" class="navbar__link">Ana Sayfa</a>
+        <a href="filo.html" class="navbar__link">Filomuz</a>
+        <a href="fiyatlar.html" class="navbar__link">Fiyatlar</a>
+        <a href="hakkimizda.html" class="navbar__link">Hakkımızda</a>
+        <a href="iletisim.html" class="navbar__link active">İletişim</a>
+      </div>
+      <div class="navbar__actions">
+        <div class="lang-selector">
+          <button class="lang-selector__btn">🇹🇷 TR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="lang-selector__dropdown">
+            <button class="lang-selector__item active" onclick="window.location.href='iletisim.html'">🇹🇷 Türkçe</button>
+            <button class="lang-selector__item" onclick="window.location.href='en/contact.html'">🇬🇧 English</button>
+            <button class="lang-selector__item" onclick="window.location.href='ar/contact.html'">🇸🇦 العربية</button>
+          </div>
+        </div>
+        <a href="#" class="btn btn--whatsapp btn--sm hide-mobile" data-whatsapp-link>WhatsApp</a>
+        <button class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobile-menu">
+    <a href="index.html" class="navbar__link">Ana Sayfa</a>
+    <a href="filo.html" class="navbar__link">Filomuz</a>
+    <a href="fiyatlar.html" class="navbar__link">Fiyatlar</a>
+    <a href="hakkimizda.html" class="navbar__link">Hakkımızda</a>
+    <a href="iletisim.html" class="navbar__link active">İletişim</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero hero--sm contact-hero">
+    <div class="hero__bg"><img src="assets/images/hero-bg.png" alt="Uzungöl" loading="eager"></div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content" style="padding-top:var(--space-24)">
+        <div class="page-breadcrumb"><a href="index.html">Ana Sayfa</a> <span>›</span> <span class="current">İletişim</span></div>
+        <h1 class="hero__title" style="font-size:var(--fs-4xl)">Bize <span>Ulaşın</span></h1>
+        <p class="hero__subtitle">Sorularınız için bize ulaşın, size yardımcı olmaktan mutluluk duyarız.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <!-- LEFT: Contact Info -->
+        <div>
+          <div class="contact__info-cards animate-on-scroll">
+            <div class="contact-card">
+              <div class="contact-card__icon" style="background:#dcfce7;color:#16a34a">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.474A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              </div>
+              <div>
+                <h3 class="contact-card__title">WhatsApp</h3>
+                <p class="contact-card__text"><a href="#" data-whatsapp-link data-whatsapp-text>+90 555 123 45 67</a></p>
+                <p class="contact-card__text" style="margin-top:var(--space-2)">
+                  <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp-link>Mesaj Gönder</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h3 class="contact-card__title">Telefon</h3>
+                <p class="contact-card__text"><a href="#" data-phone-link data-phone-text>+90 555 123 45 67</a></p>
+                <p class="contact-card__text" style="font-size:var(--fs-xs);color:var(--color-gray-400);margin-top:var(--space-1)">Tıkla-Ara özelliği ile anında arayın</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card__icon" style="background:var(--color-navy-bg);color:var(--color-navy)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="contact-card__title">Adres</h3>
+                <p class="contact-card__text" data-address>Uzungöl Mahallesi, Çaykara, Trabzon</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Working Hours -->
+          <div class="contact__hours animate-on-scroll" style="margin-top:var(--space-6)">
+            <h3 class="contact__hours-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Çalışma Saatleri
+            </h3>
+            <div data-working-hours>
+              <!-- Rendered by main.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Map -->
+        <div class="animate-on-scroll animate-right">
+          <div class="map-container" style="margin-bottom:var(--space-6)">
+            <iframe data-maps-embed src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.123!2d40.2875!3d40.6175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM3JzAzLjAiTiA0MMKwMTcnMTUuMCJF!5e0!3m2!1str!2str!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Uzungöl Scooter Kiralama Konum"></iframe>
+          </div>
+
+          <!-- Quick CTA -->
+          <div style="background:var(--gradient-bordo);border-radius:var(--radius-xl);padding:var(--space-8);color:var(--color-white);text-align:center">
+            <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-bottom:var(--space-3);color:var(--color-white)">Hemen Kiralayın!</h3>
+            <p style="font-size:var(--fs-sm);opacity:0.85;margin-bottom:var(--space-6)">WhatsApp ile hızlı ve kolay kiralama</p>
+            <a href="#" class="btn btn--whatsapp btn--lg btn--block" data-whatsapp-link>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.474A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              WhatsApp ile İletişime Geç
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><div class="footer__logo"><span class="footer__logo-text" data-logo-text>Uzungöl Scooter</span></div><p class="footer__desc">Uzungöl'ün eşsiz doğası içinde scooter kiralama hizmeti.</p></div>
+        <div><h4 class="footer__heading">Hızlı Linkler</h4><div class="footer__links"><a href="index.html" class="footer__link">Ana Sayfa</a><a href="filo.html" class="footer__link">Filomuz</a><a href="fiyatlar.html" class="footer__link">Fiyatlar</a><a href="iletisim.html" class="footer__link">İletişim</a></div></div>
+        <div><h4 class="footer__heading">İletişim</h4><div class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-address></span></div></div>
+      </div>
+      <div class="footer__bottom"><span>&copy; 2024 Uzungöl Scooter Kiralama</span></div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float"><span class="whatsapp-float__tooltip">Bilgi almak için yazın! 💬</span><a href="#" class="whatsapp-float__btn" data-whatsapp-link target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.474A11.932 11.932 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div>
+  <button class="scroll-top" id="scroll-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

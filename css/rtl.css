@@ -1,0 +1,137 @@
+/* ============================================
+   UZUNGÖL SCOOTER — RTL CSS
+   Arabic (Right-to-Left) overrides
+   ============================================ */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Layout direction flips */
+[dir="rtl"] .flex { flex-direction: row; }
+[dir="rtl"] .text-left { text-align: right; }
+[dir="rtl"] .text-right { text-align: left; }
+
+/* Navbar */
+[dir="rtl"] .navbar__nav { flex-direction: row-reverse; }
+[dir="rtl"] .navbar__link.active::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Card badges */
+[dir="rtl"] .card__badge {
+  left: auto;
+  right: var(--space-3);
+}
+
+/* Footer links hover */
+[dir="rtl"] .footer__link:hover {
+  transform: translateX(-4px);
+}
+
+/* Scroll top button */
+[dir="rtl"] .scroll-top {
+  left: auto;
+  right: var(--space-6);
+}
+
+/* WhatsApp float */
+[dir="rtl"] .whatsapp-float {
+  right: auto;
+  left: var(--space-6);
+  align-items: flex-start;
+}
+
+/* Animation directions */
+[dir="rtl"] .animate-on-scroll.animate-left {
+  transform: translateX(30px);
+}
+[dir="rtl"] .animate-on-scroll.animate-left.animated {
+  transform: translateX(0);
+}
+
+[dir="rtl"] .animate-on-scroll.animate-right {
+  transform: translateX(-30px);
+}
+[dir="rtl"] .animate-on-scroll.animate-right.animated {
+  transform: translateX(0);
+}
+
+/* Breadcrumb direction */
+[dir="rtl"] .page-breadcrumb {
+  flex-direction: row-reverse;
+}
+
+/* Fleet detail */
+[dir="rtl"] .fleet-detail__spec {
+  flex-direction: row-reverse;
+}
+
+/* Contact hours */
+[dir="rtl"] .contact__hours-row {
+  flex-direction: row-reverse;
+}
+
+/* Pricing rules */
+[dir="rtl"] .prices__rule {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Feature cards - icon needs no flip */
+
+/* Testimonial quote position */
+[dir="rtl"] .testimonial-card__quote {
+  left: auto;
+  right: var(--space-6);
+}
+
+/* Contact card */
+[dir="rtl"] .contact-card {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+[dir="rtl"] .footer__contact-item {
+  flex-direction: row-reverse;
+}
+
+/* Form labels */
+[dir="rtl"] .contact__form-label {
+  text-align: right;
+}
+
+/* Tables */
+[dir="rtl"] .prices__extras-table th,
+[dir="rtl"] .prices__extras-table td {
+  text-align: right;
+}
+
+/* Price card features */
+[dir="rtl"] .price-card__features {
+  text-align: right;
+}
+
+[dir="rtl"] .price-card__feature {
+  flex-direction: row-reverse;
+}
+
+/* Language selector */
+[dir="rtl"] .lang-selector__dropdown {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .lang-selector__item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  [dir="rtl"] .hero__actions {
+    align-items: stretch;
+  }
+}
