@@ -266,8 +266,8 @@
     logoImages.forEach(img => {
       if (logo.url) {
         img.src = logo.url;
-        img.style.display = '';
       }
+      img.style.display = '';
     });
 
     logoTexts.forEach(el => {
@@ -391,7 +391,7 @@
       featuredContainer.innerHTML = scooters.map((s, i) => `
         <div class="card scooter-card animate-on-scroll stagger-${i + 1}" id="scooter-${s.id}">
           <div class="scooter-card__image-wrapper">
-            <img class="scooter-card__image" src="${s.images[0] || 'assets/images/scooter-placeholder.svg'}" alt="${s.brand} ${getLocalizedText(s.model)}" loading="lazy">
+            <img class="scooter-card__image" src="${s.images[0] || 'assets/images/logo.png'}" alt="${s.brand} ${getLocalizedText(s.model)}" loading="lazy">
             ${s.featured ? '<span class="card__badge">⭐ ' + (lang === 'ar' ? 'مميز' : lang === 'en' ? 'Popular' : 'Popüler') + '</span>' : ''}
           </div>
           <div class="card__body">
@@ -453,7 +453,7 @@
     container.innerHTML = scooters.map((s, i) => `
       <div class="card scooter-card animate-on-scroll stagger-${(i % 3) + 1}" data-watt="${s.powerWatt || s.engineCC || 0}" data-capacity="${s.capacity}">
         <div class="scooter-card__image-wrapper">
-          <img class="scooter-card__image" src="${s.images[0] || '../assets/images/scooter-placeholder.svg'}" alt="${s.brand} ${getLocalizedText(s.model)}" loading="lazy">
+          <img class="scooter-card__image" src="${s.images[0] || (getLang() === 'tr' ? 'assets/images/logo.png' : '../assets/images/logo.png')}" alt="${s.brand} ${getLocalizedText(s.model)}" loading="lazy">
           ${s.featured ? '<span class="card__badge">⭐ ' + (lang === 'ar' ? 'مميز' : lang === 'en' ? 'Popular' : 'Popüler') + '</span>' : ''}
         </div>
         <div class="card__body">

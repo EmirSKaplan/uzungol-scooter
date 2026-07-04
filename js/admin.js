@@ -220,7 +220,7 @@
               <tbody>
                 ${scooters.slice(0, 5).map(s => `
                   <tr>
-                    <td><img class="admin-table__image" src="${s.images[0] || 'assets/images/scooter-placeholder.svg'}" alt="${s.brand}"></td>
+                    <td><img class="admin-table__image" src="${s.images[0] || 'assets/images/logo.png'}" alt="${s.brand}"></td>
                     <td><strong>${s.brand} ${s.model.tr}</strong></td>
                     <td>${s.powerWatt || s.engineCC || 0}W</td>
                     <td>₺${s.prices.daily}</td>
@@ -400,7 +400,7 @@
                   <tbody>
                     ${scooters.map(s => `
                       <tr>
-                        <td><img class="admin-table__image" src="${s.images[0] || 'assets/images/scooter-placeholder.svg'}" alt="${s.brand}"></td>
+                        <td><img class="admin-table__image" src="${s.images[0] || 'assets/images/logo.png'}" alt="${s.brand}"></td>
                         <td><strong>${s.brand}</strong><br><span style="color:var(--color-gray-500);font-size:var(--fs-xs)">${s.model.tr}</span></td>
                         <td>${s.powerWatt || s.engineCC || 0}W</td>
                         <td>${s.capacity} kişi</td>
