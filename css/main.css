@@ -533,15 +533,52 @@ p {
   }
   .section { padding: var(--space-12) 0; }
   .section--lg { padding: var(--space-16) 0; }
+  .section--sm { padding: var(--space-8) 0; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hide-mobile { display: none !important; }
+  .show-mobile { display: block !important; }
+  .text-center-mobile { text-align: center !important; }
+  .flex-col-mobile { flex-direction: column !important; }
+
+  /* Reduce section header margin on mobile */
+  .section-header { margin-bottom: var(--space-8); }
+  .section-title { font-size: var(--fs-2xl); }
+  .section-subtitle { font-size: var(--fs-sm); }
+
+  /* Better tap targets */
+  a, button { min-height: 44px; }
+  .btn { min-height: 44px; padding: var(--space-3) var(--space-5); }
+  .btn--sm { min-height: 36px; }
 }
 
 @media (max-width: 480px) {
   :root {
-    --fs-2xl: 1.5rem;
-    --fs-3xl: 1.625rem;
-    --fs-4xl: 1.875rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.375rem;
+    --fs-3xl: 1.5rem;
+    --fs-4xl: 1.75rem;
+    --fs-5xl: 2rem;
+    --container-padding: var(--space-3);
+  }
+  .section { padding: var(--space-8) 0; }
+  .section--lg { padding: var(--space-12) 0; }
+
+  /* Tighter spacing on small phones */
+  .mb-12 { margin-bottom: var(--space-8); }
+  .mb-10 { margin-bottom: var(--space-6); }
+  .p-8 { padding: var(--space-4); }
+  .p-6 { padding: var(--space-3); }
+  .gap-8 { gap: var(--space-4); }
+  .gap-6 { gap: var(--space-3); }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --fs-xl: 1.125rem;
+    --fs-2xl: 1.25rem;
+    --fs-3xl: 1.375rem;
+    --fs-4xl: 1.5rem;
+    --container-padding: var(--space-3);
   }
 }
 

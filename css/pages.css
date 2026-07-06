@@ -33,6 +33,7 @@
 @media (max-width: 640px) {
   .featured-scooters__grid {
     grid-template-columns: 1fr;
+    gap: var(--space-5);
   }
 }
 
@@ -149,7 +150,10 @@
 @media (max-width: 640px) {
   .fleet__grid {
     grid-template-columns: 1fr;
+    gap: var(--space-5);
   }
+  .fleet__filters { gap: var(--space-2); }
+  .fleet__filter-btn { padding: var(--space-2) var(--space-3); font-size: var(--fs-xs); }
 }
 
 .fleet-detail {
@@ -243,6 +247,30 @@
   .fleet-detail__gallery {
     position: static;
   }
+  .fleet-detail__main-image {
+    height: 260px;
+  }
+  .fleet-detail__specs {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .fleet-detail__main-image {
+    height: 200px;
+    margin-bottom: var(--space-3);
+  }
+  .fleet-detail__thumb {
+    width: 60px;
+    height: 45px;
+  }
+  .fleet-detail__specs {
+    grid-template-columns: 1fr;
+  }
+  .fleet-detail__spec {
+    padding: var(--space-3);
+  }
 }
 
 /* ==========================================
@@ -294,6 +322,11 @@
     grid-template-columns: 1fr;
     max-width: 400px;
   }
+  .prices__toggle-btn { padding: var(--space-2) var(--space-4); font-size: var(--fs-xs); }
+}
+
+@media (max-width: 480px) {
+  .prices__grid { max-width: 100%; }
 }
 
 .prices__extras {
@@ -332,6 +365,27 @@
   color: var(--color-gray-600);
 }
 
+/* Mobile: Make table scrollable horizontally */
+@media (max-width: 768px) {
+  .prices__extras {
+    padding: var(--space-4);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prices__extras-table {
+    min-width: 500px;
+  }
+  .prices__extras-table th,
+  .prices__extras-table td {
+    padding: var(--space-3);
+    font-size: var(--fs-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .prices__extras { padding: var(--space-3); }
+}
+
 .prices__rules {
   margin-top: var(--space-12);
   background: var(--color-navy-bg);
@@ -349,6 +403,12 @@
   .prices__rules-list {
     grid-template-columns: 1fr;
   }
+  .prices__rules { padding: var(--space-5); }
+}
+
+@media (max-width: 480px) {
+  .prices__rules { padding: var(--space-4); }
+  .prices__rule { font-size: var(--fs-xs); }
 }
 
 .prices__rule {
@@ -404,7 +464,18 @@
 @media (max-width: 768px) {
   .about__story {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
   }
+  .about__story-image img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__story-image img {
+    height: 200px;
+  }
+  .about__story-content h2 { font-size: var(--fs-xl); }
 }
 
 .about__values-grid {
@@ -435,7 +506,19 @@
 @media (max-width: 768px) {
   .contact__grid {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
   }
+  .contact__form { padding: var(--space-5); }
+}
+
+@media (max-width: 480px) {
+  .contact__form { padding: var(--space-4); }
+  .contact__form-input,
+  .contact__form-textarea {
+    padding: var(--space-3);
+    font-size: var(--fs-xs);
+  }
+  .contact__hours { padding: var(--space-4); }
 }
 
 .contact__info-cards {
@@ -569,4 +652,48 @@
 
 .page-breadcrumb .current {
   color: var(--color-gold);
+}
+
+@media (max-width: 480px) {
+  .page-breadcrumb { font-size: var(--fs-xs); }
+}
+
+
+/* ==========================================
+   GENERAL PAGE HERO — Mobile
+   ========================================== */
+@media (max-width: 768px) {
+  .fleet-hero,
+  .about-hero { min-height: 35vh; padding-bottom: var(--space-8); }
+  .prices-hero,
+  .contact-hero { min-height: 30vh; }
+}
+
+@media (max-width: 480px) {
+  .fleet-hero,
+  .about-hero { min-height: 30vh; padding-bottom: var(--space-6); }
+  .prices-hero,
+  .contact-hero { min-height: 25vh; }
+}
+
+
+/* ==========================================
+   MAP CONTAINER — Mobile
+   ========================================== */
+@media (max-width: 768px) {
+  .map-container { height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .map-container { height: 250px; }
+}
+
+
+/* ==========================================
+   ROUTE CARD — Mobile
+   ========================================== */
+@media (max-width: 480px) {
+  .route-card { height: 220px; }
+  .route-card__overlay { padding: var(--space-4); }
+  .route-card__title { font-size: var(--fs-base); }
 }

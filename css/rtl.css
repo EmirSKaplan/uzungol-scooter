@@ -134,4 +134,18 @@
   [dir="rtl"] .hero__actions {
     align-items: stretch;
   }
+  [dir="rtl"] .footer__brand { text-align: center; }
+  [dir="rtl"] .footer__grid { text-align: center; }
+  [dir="rtl"] .contact-card { flex-direction: row-reverse; }
+  [dir="rtl"] .whatsapp-float { left: var(--space-4); right: auto; }
+  [dir="rtl"] .scroll-top { right: var(--space-4); left: auto; }
 }
+
+@media (max-width: 480px) {
+  [dir="rtl"] .footer__grid { text-align: center; }
+  [dir="rtl"] .footer__links { align-items: center; }
+  [dir="rtl"] .footer__contact-item { justify-content: center; }
+  [dir="rtl"] .whatsapp-float { left: var(--space-3); right: auto; }
+  [dir="rtl"] .contact-card { flex-direction: column; align-items: center; text-align: center; }
+}
+

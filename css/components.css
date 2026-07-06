@@ -256,6 +256,17 @@
   .navbar__hamburger { display: flex; }
   .navbar { padding: var(--space-3) 0; }
   .navbar.scrolled { padding: var(--space-2) 0; }
+  .navbar__logo img { height: 34px; }
+  .navbar__logo-text { font-size: var(--fs-sm); }
+  .navbar__logo-text span { font-size: 0.65rem; }
+  .navbar__actions { gap: var(--space-2); }
+  .lang-selector__btn { padding: var(--space-1) var(--space-2); font-size: var(--fs-xs); }
+}
+
+@media (max-width: 480px) {
+  .navbar__logo img { height: 30px; }
+  .navbar__logo { gap: var(--space-2); }
+  .navbar__mobile .navbar__link { font-size: var(--fs-lg); padding: var(--space-3) var(--space-6); }
 }
 
 
@@ -721,11 +732,21 @@
 
 @media (max-width: 768px) {
   .hero { min-height: 100svh; }
+  .hero--sm { min-height: 40vh; }
   .hero__title { font-size: var(--fs-3xl); }
   .hero__subtitle { font-size: var(--fs-base); }
   .hero__content { padding-top: var(--space-24); }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; }
+  .hero__badge { font-size: var(--fs-xs); padding: var(--space-1) var(--space-3); }
+  .hero__scroll-indicator { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero__title { font-size: var(--fs-2xl); }
+  .hero__subtitle { font-size: var(--fs-sm); margin-bottom: var(--space-6); }
+  .hero__content { padding-top: var(--space-20); }
+  .hero__actions .btn { font-size: var(--fs-sm); }
 }
 
 
@@ -832,7 +853,15 @@
 }
 
 @media (max-width: 768px) {
-  .stats__grid { grid-template-columns: repeat(2, 1fr); }
+  .stats__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+  .stats { padding: var(--space-10) 0; }
+  .stat__number { font-size: var(--fs-3xl); }
+}
+
+@media (max-width: 480px) {
+  .stats__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  .stat__number { font-size: var(--fs-2xl); }
+  .stat__label { font-size: var(--fs-xs); }
 }
 
 
@@ -968,15 +997,36 @@
 }
 
 @media (max-width: 768px) {
+  .footer { padding: var(--space-10) 0 var(--space-6); }
   .footer__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
   }
+  .footer__brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer__brand .footer__logo { justify-content: center; }
+  .footer__brand .footer__social { justify-content: center; }
   .footer__bottom {
     flex-direction: column;
     gap: var(--space-3);
     text-align: center;
   }
+}
+
+@media (max-width: 480px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+  }
+  .footer__brand .footer__desc { font-size: var(--fs-xs); }
+  .footer__heading { font-size: var(--fs-sm); margin-bottom: var(--space-4); }
+  .footer__links { align-items: center; }
+  .footer__contact-item { justify-content: center; }
 }
 
 
@@ -1046,6 +1096,19 @@
   height: 30px;
 }
 
+@media (max-width: 768px) {
+  .whatsapp-float { bottom: var(--space-4); right: var(--space-4); }
+  .whatsapp-float__btn { width: 52px; height: 52px; }
+  .whatsapp-float__btn svg { width: 26px; height: 26px; }
+  .whatsapp-float__tooltip { display: none; }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float { bottom: var(--space-3); right: var(--space-3); }
+  .whatsapp-float__btn { width: 48px; height: 48px; }
+  .whatsapp-float__btn svg { width: 24px; height: 24px; }
+}
+
 
 /* ==========================================
    CTA SECTION
@@ -1109,6 +1172,19 @@
   justify-content: center;
   gap: var(--space-4);
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .cta-section { padding: var(--space-10) 0; }
+  .cta-section__title { font-size: var(--fs-2xl); }
+  .cta-section__text { font-size: var(--fs-sm); }
+  .cta-section__actions { flex-direction: column; align-items: center; }
+  .cta-section__actions .btn { width: 100%; max-width: 320px; }
+}
+
+@media (max-width: 480px) {
+  .cta-section { padding: var(--space-8) 0; }
+  .cta-section__actions .btn { max-width: 100%; }
 }
 
 
@@ -1237,6 +1313,12 @@
   color: var(--color-bordo);
 }
 
+@media (max-width: 480px) {
+  .contact-card { padding: var(--space-4); gap: var(--space-3); }
+  .contact-card__icon { width: 44px; height: 44px; }
+  .contact-card__icon svg { width: 20px; height: 20px; }
+}
+
 
 /* ==========================================
    MAP CONTAINER
@@ -1363,4 +1445,67 @@
 .scroll-top svg {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 768px) {
+  .scroll-top {
+    bottom: var(--space-4);
+    left: var(--space-4);
+    width: 40px;
+    height: 40px;
+  }
+  .scroll-top svg { width: 18px; height: 18px; }
+}
+
+
+/* ==========================================
+   PRICE CARD — Mobile
+   ========================================== */
+@media (max-width: 768px) {
+  .price-card { padding: var(--space-6); }
+  .price-card__price { font-size: var(--fs-3xl); }
+  .price-card__title { font-size: var(--fs-lg); }
+}
+
+@media (max-width: 480px) {
+  .price-card { padding: var(--space-5); }
+  .price-card__price { font-size: var(--fs-2xl); }
+}
+
+
+/* ==========================================
+   TESTIMONIAL CARD — Mobile
+   ========================================== */
+@media (max-width: 768px) {
+  .testimonial-card { padding: var(--space-6); }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card { padding: var(--space-4); }
+  .testimonial-card__text { font-size: var(--fs-xs); }
+  .testimonial-card__quote { font-size: var(--fs-2xl); }
+}
+
+
+/* ==========================================
+   FEATURE CARD — Mobile
+   ========================================== */
+@media (max-width: 480px) {
+  .feature-card { padding: var(--space-5); }
+  .feature-card__icon { width: 52px; height: 52px; }
+  .feature-card__icon svg { width: 24px; height: 24px; }
+  .feature-card__title { font-size: var(--fs-base); }
+  .feature-card__text { font-size: var(--fs-xs); }
+}
+
+
+/* ==========================================
+   CARD — Mobile
+   ========================================== */
+@media (max-width: 480px) {
+  .card__body { padding: var(--space-4); }
+  .card__image { height: 180px; }
+  .card__footer { padding: var(--space-3) var(--space-4); }
+  .card__price-amount { font-size: var(--fs-xl); }
+  .scooter-card__image-wrapper { height: 200px; }
 }
